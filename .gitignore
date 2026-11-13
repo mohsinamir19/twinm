@@ -1,0 +1,48 @@
+.env
+lambda-deployment.zip
+lambda-package/
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate.d/
+*.tfvars.secret
+
+# Lambda packages
+
+# Memory storage (contains conversation history)
+memory/
+
+# Google/OAuth secrets and tokens
+secrets/
+
+# Environment files
+.env.*
+!.env.example
+
+# Node
+node_modules/
+out/
+.next/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# AWS
+.aws/
+.env.production
+
+# test scratch data
+backend/tests/.tmp_memory/

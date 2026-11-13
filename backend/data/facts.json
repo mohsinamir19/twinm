@@ -1,0 +1,46 @@
+{
+  "full_name": "Mohsin Amir",
+  "name": "Mohsin",
+  "current_role": "AI Agent Developer and AI Product Designer",
+  "location": "Islamabad, Pakistan (timezone: Asia/Karachi, PKT)",
+  "linkedin": "linkedin.com/in/mohsinamir111",
+  "portfolio": "behance.net/mohsinshah9",
+  "languages": [
+    "English (professional working)",
+    "Urdu"
+  ],
+  "specialties": [
+    "AI agents and multi-agent systems (LangGraph, CrewAI, OpenAI Agents SDK, AutoGen, MCP)",
+    "Voice agents and workflow automation (Retell AI, Vapi, n8n)",
+    "RAG pipelines and tool-using assistants",
+    "AI product and UI/UX design (Figma, conversational and agentic interfaces)",
+    "Deploying AI apps (AWS, Azure, GCP, Vercel, Docker)"
+  ],
+  "open_to": [
+    "Freelance projects",
+    "Full-time opportunities",
+    "Consulting"
+  ],
+  "services": [
+    "Custom AI agents that plan, use tools and finish multi-step work",
+    "AI voice agents and automations that answer calls, book appointments and run workflows",
+    "RAG assistants over a company's own documents",
+    "Design of clear, simple interfaces for complex AI products",
+    "Taking an AI prototype to a working, deployed product"
+  ],
+  "education": [
+    {
+      "degree": "BS Computer Science (in progress)",
+      "institution": "SZABIST Islamabad",
+      "year": "2024 to 2028"
+    }
+  ],
+  "certifications": [
+    "AI Engineer Agentic Track: The Complete Agent and MCP Course (Ed Donner, Coursera)",
+    "Google Developer AI workshop",
+    "edX Verified Certificate for Critical Thinking",
+    "Motion Design with Figma"
+  ],
+  "pricing": "Not published. Pricing depends on scope, so suggest a short call.",
+  "meeting_hours": "Mon to Fri, 10:00 to 18:00 PKT, 30 minute calls on Google Meet"
+}

@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-sans-face), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono-face), ui-monospace, Menlo, monospace;
+  --font-serif: var(--font-serif-face), Georgia, serif;
+  --color-amber-signal: #f5a524;
+  --color-green-signal: #34d399;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  font-family: var(--font-sans);
+  color: #f2ede4;
+  background-color: #171512;
+  /* Deep, muted midnight: two low tints give the glass something to refract. */
+  background-image:
+    radial-gradient(52rem 38rem at 10% 0%, rgb(245 165 36 / 0.09), transparent 62%),
+    radial-gradient(48rem 36rem at 90% 94%, rgb(52 211 153 / 0.06), transparent 62%),
+    linear-gradient(165deg, #211e19 0%, #1a1814 55%, #151310 100%);
+  background-attachment: fixed;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Browser surfaces themed from the palette */
+::selection {
+  background: rgb(245 165 36 / 0.35);
+  color: #fff;
+}
+
+input,
+textarea {
+  caret-color: #fbbf24;
+}
+
+@layer base {
+  :focus-visible {
+    outline: 2px solid #fbbf24;
+    outline-offset: 2px;
+  }
+}
+
+.glass {
+  background: rgb(41 37 33 / 0.55);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgb(255 255 255 / 0.1);
+  box-shadow: 0 1px 0 rgb(255 255 255 / 0.04) inset, 0 18px 40px -16px rgb(0 0 0 / 0.55);
+  border-radius: 1rem;
+}
+
+.scroll-soft {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(168 162 152 / 0.3) transparent;
+}
+.scroll-soft::-webkit-scrollbar {
+  width: 8px;
+}
+.scroll-soft::-webkit-scrollbar-thumb {
+  background: rgb(168 162 152 / 0.3);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* Rendered markdown inside assistant messages */
+.prose-twin {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #e7e1d6;
+  max-width: 70ch;
+}
+.prose-twin > * + * {
+  margin-top: 0.65em;
+}
+.prose-twin h1,
+.prose-twin h2,
+.prose-twin h3 {
+  font-weight: 650;
+  line-height: 1.3;
+  margin-top: 1.1em;
+  text-wrap: balance;
+}
+.prose-twin h1 { font-size: 1.15rem; }
+.prose-twin h2 { font-size: 1.05rem; }
+.prose-twin h3 { font-size: 0.975rem; }
+.prose-twin ul,
+.prose-twin ol { padding-left: 1.25rem; }
+.prose-twin ul { list-style: disc; }
+.prose-twin ol { list-style: decimal; }
+.prose-twin li + li { margin-top: 0.25em; }
+.prose-twin li::marker { color: #fbbf24; }
+.prose-twin a {
+  color: #fcd34d;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgb(252 211 77 / 0.4);
+}
+.prose-twin a:hover { text-decoration-color: currentColor; }
+.prose-twin strong { font-weight: 650; color: #fff; }
+.prose-twin code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: rgb(255 255 255 / 0.08);
+  border: 1px solid rgb(255 255 255 / 0.1);
+  padding: 0.1em 0.35em;
+  border-radius: 0.4rem;
+}
+.prose-twin pre {
+  overflow-x: auto;
+  background: rgb(0 0 0 / 0.3);
+  border: 1px solid rgb(255 255 255 / 0.08);
+  border-radius: 0.9rem;
+  padding: 0.75rem 0.9rem;
+}
+.prose-twin pre code { background: none; border: 0; padding: 0; }
+.prose-twin blockquote {
+  padding-left: 0.9rem;
+  border-left: 1px solid rgb(251 191 36 / 0.5);
+  color: #d6cfc2;
+}
+.prose-twin table { width: 100%; border-collapse: collapse; font-size: 0.875rem; font-variant-numeric: tabular-nums; }
+.prose-twin th,
+.prose-twin td { text-align: left; padding: 0.35rem 0.5rem; border-bottom: 1px solid rgb(168 162 152 / 0.2); }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

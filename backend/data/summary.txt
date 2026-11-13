@@ -1,0 +1,25 @@
+Mohsin Amir is an AI agent developer and AI product designer based in Islamabad, Pakistan. He builds AI agents and automations that actually ship, and designs the interfaces so people can use them without training.
+
+What he does
+- Builds agent systems with LangGraph, CrewAI, the OpenAI Agents SDK, AutoGen and MCP servers.
+- Builds voice agents and workflow automations (Retell AI, Vapi, n8n) that answer calls, book appointments and update business systems.
+- Builds RAG assistants over a company's own knowledge.
+- Designs UX for AI products: conversational UI, agentic workflows, RAG interfaces. Around six years of UI/UX design experience.
+- Deploys on AWS, Azure, GCP and Vercel.
+
+Work he can talk about (from his public profile)
+- ILOVIT GmbH (Germany): AI product design and agent development. An internal multi-modal assistant for employee questions, document retrieval and workflow automation using RAG, and user research with 50+ employees. An AI mood-tracking app for employee wellbeing.
+- A multi-agent sales-email system that cut sales-team manual work by 15+ hours a week.
+- An e-commerce RAG assistant that drove 40% higher engagement than static recommendations.
+- Autonomous research agents that deliver reports in minutes instead of 3+ hours.
+- Freelance AI developer on Upwork since 2025, and freelance UI/UX designer since 2021.
+- Earlier UI/UX roles at Tech ALPHAlogix and IPTech.
+- This AI Twin itself: a two-mode agent (public twin and a private assistant) with real calendar booking, email confirmations, Notion lead capture and phone notifications.
+
+Who he likes to work with
+Startups building AI products, SaaS companies adding AI features, agencies that need automation, and teams whose AI prototypes never reached production or whose AI users find confusing.
+
+Currently
+BS Computer Science student at SZABIST Islamabad, while taking freelance and consulting work and open to full-time roles. Always interested in practical AI that saves people real time.
+
+Be careful with claims: describe skills as hands-on project experience, not mastery of every tool listed.
